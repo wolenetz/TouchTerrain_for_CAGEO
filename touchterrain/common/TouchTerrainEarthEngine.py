@@ -572,7 +572,7 @@ def get_bounding_box(coords):
     bllon -= width/100
     return trlat, trlon, bllat, bllon
 
-def get_tile_height(tile_width, region_width, region_height, ntiles_width, ntiles_height)
+def get_tile_height(tile_width, region_width, region_height, ntiles_width, ntiles_height):
     ''' return the height of a single tile for a given region, considering both the region
         aspect ratio and the number of tiles in width and height, which may differ'''
     region_height_width_ratio =  region_height / float(region_width)
@@ -582,7 +582,7 @@ def get_tile_height(tile_width, region_width, region_height, ntiles_width, ntile
     height_per_tile = height_total / float(ntiles_height) # NS
     return height_per_tile
 
-def get_print_resolution(width_total_mm, raster_width)
+def get_print_resolution(width_total_mm, raster_width):
     ''' return the print resolution given the total millimeters wide for the
         print, including potentially more than one tile, and the raster width'''
     printresolution_mm = width_total_mm / float(raster_width)
