@@ -131,6 +131,9 @@ def plotPoint(x,y,height,npim,pathedPoints,xOffset,yOffset):
                        the primary point described by x,y 
 
     """ 
+    # MDW Debugging
+    print(f"plotPoint: {x} {y} with offset {xOffset} {yOffset} and height {height}, npim shape {npim.shape} pathedPoints count {len(pathedPoints)}")
+
     plotY = y + yOffset 
     plotX = x + xOffset 
     pointKey = str(plotX) + "x" + str(plotY)  
